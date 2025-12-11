@@ -1,0 +1,69 @@
+.detect-layout-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* === Left Section Styling === */
+.left-detect {
+  flex: 1;
+}
+
+.detect-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.detect-btn {
+  border-radius: 10px !important;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.detect-info {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+  color: #555;
+}
+
+/* === Right Section Styling === */
+.right-table {
+  flex: 2;
+}
+
+.table-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Scrollable wrapper */
+.scroll-table-wrapper {
+  max-height: 520px;
+  overflow-y: auto;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Table images */
+.table-img {
+  width: 150px;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Table appearance */
+.detect-table th,
+.detect-table td {
+  vertical-align: middle;
+}
+
+/* === Responsive: Stack Columns on Small Screens === */
+@media (max-width: 900px) {
+  .detect-layout-container {
+    flex-direction: column;
+  }
+}

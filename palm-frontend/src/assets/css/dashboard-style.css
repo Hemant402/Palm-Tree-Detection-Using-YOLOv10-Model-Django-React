@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.main-container{
+  background-image:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/background_image1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: auto;
+}
+.main-container .row .col-4 h1{
+    margin-top: 200px;
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-justify: auto;
+}
+.main-container .container{
+    width: 850px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: none !important;  
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+.main-container .container .hexagonArea{
+    display: flex;
+}
+.main-container .container .hexagonArea.last{
+    transform: translateY(-40px);
+}
+.main-container .container .hexagonArea .hexagon{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    margin: 0 5px;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    background-color: rgba(0, 0, 50, 0.9); /* Dark blue with 50% transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.main-container .container .hexagonArea .hexagon img{
+    width: 40px;
+}
+.main-container .container .hexagonArea .hexagon h3{
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 5px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+.main-container .container .hexagonArea .hexagon:hover{
+    background: deepskyblue;
+    transform: scale(0.8);
+}

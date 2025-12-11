@@ -1,0 +1,182 @@
+
+.upload-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  position: relative;
+}
+
+
+ .back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #1d4ed8;
+} 
+/* Container for left & right panels */
+.left-right-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* LEFT PANEL */
+.left-upload {
+  flex: 1;
+}
+
+.upload-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.upload-title {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.file-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.upload-btn {
+  padding: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-btn:disabled {
+  background: #9cb9e5;
+}
+
+.upload-btn:hover {
+  background: #005fcc;
+}
+
+/* File list */
+.file-name-list ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* RIGHT PANEL */
+.right-table {
+  flex: 2;
+}
+
+.table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.table-title {
+  margin-bottom: 15px;
+}
+
+/* Scrollable table wrapper */
+.scroll-table-wrapper {
+  max-height: 500px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+}
+
+.scroll-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scroll-table th,
+.scroll-table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+
+.table-thumb {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Delete button */
+.delete-btn {
+  padding: 6px 12px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: #b02a37;
+}
+
+
+.success-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #4caf50;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: fadeInOut 3s ease forwards;
+}
+
+.success-check {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .left-right-container {
+    flex-direction: column;
+  }
+}
+

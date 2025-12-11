@@ -1,0 +1,87 @@
+.results-page {
+  padding: 20px;
+}
+
+.results-header {
+ display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.left-side, .right-side {
+  display: flex;
+  align-items: center;
+}
+.back-btn,
+.download-btn {
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+}
+
+.back-btn {
+  background-color: #ccc;
+}
+
+.download-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.results-title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.scroll-table-wrapper {
+  max-height: 500px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.results-table th {
+  background: #f3f5ff;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.results-table td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button:hover {
+  background: #eef2ff;
+}
+
+.pagination .active-page {
+  background: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
