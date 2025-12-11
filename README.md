@@ -31,7 +31,7 @@ Monitor detection pipeline
 Access intermediate results
 
 <h4>Admin</h4>
-Manage all users (Add/Edit/Delete Staff + Normal users)
+Manage all users (Add/Edit/Delete Staff users)
 
 View analytics dashboard
 
